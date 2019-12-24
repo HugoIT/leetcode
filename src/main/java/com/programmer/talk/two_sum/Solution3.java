@@ -6,9 +6,9 @@ import java.util.Map;
 /**
  * @Author: Hsiung
  * @Date: 2019/12/23 16:58
- * @Description 利用哈希表
+ * @Description TODO
  */
-public class Solution2 {
+public class Solution3 {
 	public int[] twoSum(int[] nums, int target) {
 		int size = nums.length;
 		Map<Integer, Integer> map = new HashMap<>();
@@ -29,6 +29,6 @@ public class Solution2 {
 	public static void main(String[] args) {
 		int[] a = {3, 2, 4};
 		int b = 6;
-		new Solution2().twoSum(a, b);
+		new Solution3().twoSum(a, b);
 	}
 }
