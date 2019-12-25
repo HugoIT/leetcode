@@ -3,8 +3,9 @@ package com.programmer.talk.two_sum;
 /**
  * @Author: Hsiung
  * @Date: 2019/12/23 16:32
- * @Description 两数之和
+ * @Description 1.两数之和
  * 时间复杂度：O(n^2)
+ * @topic 数组、哈希表
  */
 public class Solution1 {
 	public int[] twoSum(int[] nums, int target) {
