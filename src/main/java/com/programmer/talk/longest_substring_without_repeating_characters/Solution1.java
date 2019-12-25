@@ -13,8 +13,8 @@ import java.util.Set;
  */
 public class Solution1 {
 	public int lengthOfLongestSubstring(String s) {
-		if (s == null || s.length() <= 0) {
-			throw new RuntimeException("wrong string");
+		if (s == null || s.length() == 0) {
+			return 0;
 		}
 		// 字符串长度
 		int n = s.length();
