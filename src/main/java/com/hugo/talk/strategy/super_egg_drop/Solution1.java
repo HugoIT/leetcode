@@ -1,4 +1,4 @@
-package com.programmer.talk.strategy.super_egg_drop;
+package com.hugo.talk.strategy.super_egg_drop;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,6 +9,7 @@ import java.util.Map;
  * 1.假设只有1个鸡蛋
  * 2.假设有无限个鸡蛋
  * 3.假设有2个鸡蛋
+ * 动态规划：Dynamic programming
  *
  * @author Hugo
  */
@@ -18,7 +19,8 @@ public class Solution1 {
 	 *
 	 * @param K 鸡蛋个数
 	 * @param N 楼层总数
-	 * @return 最少移动次数
+	 * @return 最少移动次数（最少的试验次数）
+	 * 寻找F层楼
 	 */
 	public int superEggDrop(int K, int N) {
 		return dp(K, N);
