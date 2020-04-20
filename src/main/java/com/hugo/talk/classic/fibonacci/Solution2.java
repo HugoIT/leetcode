@@ -3,7 +3,7 @@ package com.hugo.talk.classic.fibonacci;
 /**
  * @author hugo0129
  * @description 斐波那契数列
- * 记忆法搜索
+ * 记忆化搜索
  */
 public class Solution2 {
 	public static void main(String[] args) {
