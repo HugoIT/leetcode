@@ -10,24 +10,27 @@ public class Solution1 {
 	}
 
 	private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-		ListNode p1 = l1;
-		ListNode p2 = l2;
 		// 初始节点
-		ListNode dummyHead = new ListNode(-1);
-		ListNode current = dummyHead;
+		ListNode dummyHead = new ListNode(0);
+		ListNode p = l1, q = l2, current = dummyHead;
 		// 进位值
 		int carry = 0;
-		while (p1.next != null || p2.next != null) {
-			int a = p1.val > 0 ? p1.val : 0;
-			int b = p2.val > 0 ? p2.val : 0;
+		while (p != null || q != null) {
+			int a = p != null ? p.val : 0;
+			int b = q != null ? q.val : 0;
 			current.next = new ListNode((a + b + carry) % 10);
 			current = current.next;
-
-
+			if (p != null) {
+				p = p.next;
+			}
+			if (q != null) {
+				q = q.next;
+			}
 		}
-
-
-		return null;
+		if (carry > 0) {
+			current.next = new ListNode(carry);
+		}
+		return dummyHead.next;
 	}
 
 
